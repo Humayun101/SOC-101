@@ -1,4 +1,5 @@
 need 2 instances of the operating systems
+
 Linux and Windows
 
 and a Hypervisor to create and manage Virtual machines
@@ -8,8 +9,10 @@ and a Hypervisor to create and manage Virtual machines
 for instances 
 **[Windows 10 Enterprise | Microsoft Evaluation Center](https://www.microsoft.com/en-us/evalcenter/download-windows-10-enterprise?msockid=0759d7977ea36ec018c8c21a7fc36f11)**
 
-once install, set it up on virtual box and install the windows VM 
+once install, set it up on virtual box and install the windows VM
+
 also install guest addition cd image
+
 make sure to set clipboard to bidirectional from windows to host or vice versa
 
 for the attack defence lab setup, do the following windows configuration
@@ -25,19 +28,27 @@ for the attack defence lab setup, do the following windows configuration
 for ubuntu
 [Download Ubuntu Desktop | Ubuntu](https://ubuntu.com/download/desktop)
 AFTER INSTALLING
+
 do the following for linux configuration
+
 sudo apt update
+
 sudo apt install bzip2 tar gcc perl make git
+
 sudo apt install linux-headers-generic
+
 sudo apt install linux-headers-$(uname -r){this will confirm that the upper cmd runned succesfullyt and installed}
 
 this will allow to install guest addition cd image
+
 after getting addition image, do the following 
 
-![[Pasted image 20250921202522.png]]
+<img src="Pasted image 20250921202522.png">
+
 You can now enter full screen and set clipboard to bidirectional from linux to host or vice versa for maximum optimization
 
 To configure Linux, use git clone to get the resource files
+
 humayun@Ubuntu-SOC:~/Documents$ git clone https://github.com/MalwareCube/SOC101.git
 
 **LAB NETWORK CONFIGURATION**
@@ -50,7 +61,11 @@ for that
 	open both machine and ping ip to each other
 
 By the end of lab setup, u should have
+
 both operating system in VM
+
 Both configured and optimized
+
 both have the resources file in em
+
 both have network configured as above
